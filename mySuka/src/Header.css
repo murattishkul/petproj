@@ -1,0 +1,29 @@
+.vertical {
+  width: 1px;
+  float: left;
+  border-width: 1.5px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to top, #e2e2e2, #4b4a4a, #e2e2e2);
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#e2e2e2), color-stop(#4b4a4a), to(#e2e2e2));
+     border-image: linear-gradient(to top, #e2e2e2, #4b4a4a, #e2e2e2);
+  border-image-slice: 1;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.bg-color {
+  background-color: silver;
+}
+
+.app {
+  margin-top: 100px;
+}
+
+.box {
+  width: 8rem;
+  height: 8rem;
+  background: red;
+  padding-right: 1rem;
+}
+/*# sourceMappingURL=Header.css.map */
