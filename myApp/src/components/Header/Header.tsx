@@ -4,9 +4,10 @@ import './Header.css';
 
 function Header() {
   return (
-    <div className = "d-flex align-items-center flex-column">
+    // <div className = "d-flex align-items-center flex-column" style={{width: "100%"}}>
+    <div style={{width: "100%"}}>
         <div className="d-flex flex-row">
-            <div className="box mt-auto"></div>
+            <div className="box mt-auto" style={{boxSizing: "content-box"}}></div>
             <div className="app ml-3">
                 <h1 className="text-danger">My Account</h1>
                 <nav className="navbar navbar-expand-sm navbar-light bg-color rounded">
@@ -61,6 +62,12 @@ function Header() {
                         <li className="nav-item active">
                             <Link to='/'>
                                 <a className="nav-link ml-3" href="">Заявка <span className="sr-only">(current)</span></a>
+                            </Link>
+                        </li>
+                        <li className="vertical ml-3"></li>
+                        <li className="nav-item active">
+                            <Link to='/'>
+                                <a className="nav-link ml-3" href="">Купля/продажа валюты <span className="sr-only">(current)</span></a>
                             </Link>
                         </li>
                     </ul>

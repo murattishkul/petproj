@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Card from './Card';
-import { Car, Assistant } from './static';
+import Card from '../Card/Card';
+import { Car, Assistant } from '../../static/static';
 
 function SideBar(){
     const [sideCards, setSideCards] = useState([
@@ -17,7 +17,7 @@ function SideBar(){
         }
     ]);
     return (
-        <div style={{float:"right", marginRight:"100px"}} >
+        <div style={{float:"right"}} >
             {sideCards.map( card => <Card title={card.title} logo={card.logo} footer={card.footer} height="200px" width="160px" heightImg="150px" widthImg="145px" /> )}
         </div>
         )

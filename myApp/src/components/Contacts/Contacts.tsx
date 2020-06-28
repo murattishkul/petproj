@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Card from './Card';
-import { EmployeeImg } from './static';
+import Card from '../Card/Card';
+import { EmployeeImg } from '../../static/static';
 
 type PeopleState = {
     
