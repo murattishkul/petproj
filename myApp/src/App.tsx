@@ -17,15 +17,21 @@ import "./App.css"
 
 function App() {
   return(
-    <div>
+    <div style={{backgroundColor: "rgb(230, 230, 230), hsl(0, 0%, 90%)"}}>
       <Router>
         <div style={{marginRight: "20%", marginLeft: "20%"}}>
           <Header/>
-          <SideBar/>
-          <Route exact path="/" component={() => (<Redirect to='/main' />)} />
-          <Route exact path="/main" component={MainView} />
-          <Route path="/about" component={About} />
-          <Route path="/contacts" component={Contacts} />
+          <div className="d-flex flex-row w-100">
+            <div className="" style={{paddingRight: "30px", width: "80%"}}>
+              <Route exact path="/" component={() => (<Redirect to='/main' />)} />
+              <Route exact path="/main" component={MainView} />
+              <Route path="/about" component={About} />
+              <Route path="/contacts" component={Contacts} />
+            </div>
+            <div className="" style={{width: "20%"}}>
+              <SideBar/>
+            </div>
+          </div>
         </div>
       </Router>
     </div>

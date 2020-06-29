@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, FunctionComponent } from "react";
 import Card from '../Card/Card';
 import { Car, Assistant } from '../../static/static';
 
-function SideBar(){
+const SideBar:FunctionComponent<any> = () => {
     const [sideCards, setSideCards] = useState([
         {
             title: "Курс обмена валют:"
@@ -17,8 +17,8 @@ function SideBar(){
         }
     ]);
     return (
-        <div style={{float:"right"}} >
-            {sideCards.map( card => <Card title={card.title} logo={card.logo} footer={card.footer} height="200px" width="160px" heightImg="150px" widthImg="145px" /> )}
+        <div className="mt-4">
+            {sideCards.map( card => <div className =" "><Card title={card.title} logo={card.logo} footer={card.footer} height="200px" width="100%" heightImg="150px" widthImg="100%" /> </div>)}
         </div>
         )
 }
